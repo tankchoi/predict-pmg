@@ -25,6 +25,8 @@ document.getElementById('run-btn').addEventListener('click', function () {
         endpoint = 'https://machine-learning-wjhp.onrender.com/predict/ridge';
     } else if (algorithm === 'nn') {
         endpoint = 'https://machine-learning-wjhp.onrender.com/predict/nn';
+    } else if (algorithm === 'stacking') {
+        endpoint = 'https://machine-learning-wjhp.onrender.com/predict/stacking';
     }
 
     fetch(endpoint, {
